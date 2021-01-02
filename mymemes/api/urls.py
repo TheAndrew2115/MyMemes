@@ -1,6 +1,6 @@
 from django.urls import path
-from .views import wain
+from .views import RoomView
 
 urlpatterns = [
-    path('', wain),
+    path("room/", RoomView.as_view()),
 ]
